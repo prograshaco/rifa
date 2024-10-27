@@ -5,14 +5,12 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 h1 {
     color: #333;
     margin-bottom: 20px;
 }
-p {
-    color: #666; /* Color más suave para el texto */
-    margin-bottom: 20px;
-}
+
 .container {
     display: flex; /* Usar flexbox */
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
@@ -20,6 +18,7 @@ p {
     max-width: 800px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centrar el contenedor */
 }
+
 .number {
     width: 60px; /* Ancho fijo para cada número */
     height: 60px; /* Alto fijo para cada número */
@@ -35,14 +34,37 @@ p {
     align-items: center; /* Centrar verticalmente el contenido */
     justify-content: center; /* Centrar horizontalmente el contenido */
 }
+
 .selected {
     background-color: #008CBA; /* Color diferente al seleccionar */
 }
+
 .sold {
     background-color: red; /* Color rojo para números vendidos */
     cursor: not-allowed; /* Cursor de no permitido para números vendidos */
 }
+
 .info {
     margin-bottom: 20px;
     color: #333;
+}
+
+#whatsappButton {
+    position: fixed; /* Posicionamiento fijo */
+    bottom: 20px; /* Espacio desde el fondo de la ventana */
+    right: 20px; /* Espacio desde el lado derecho de la ventana */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    font-size: 16px; /* Tamaño de fuente */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+#whatsappButton:hover {
+    background-color: #128C7E; /* Color al pasar el mouse */
 }
