@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+p {
+    color: #666; /* Color más suave para el texto */
+    margin-bottom: 20px;
+}
+.container {
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centrar los elementos */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+.number {
+    width: 60px; /* Ancho fijo para cada número */
+    height: 60px; /* Alto fijo para cada número */
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    background-color: #4CAF50; /* Color verde por defecto */
+    color: white; /* Texto en blanco para el número */
+    text-align: center; /* Centrar el texto */
+    margin: 5px; /* Espacio entre números */
+    display: flex; /* Hacer que el div sea un flex container */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+}
+.selected {
+    background-color: #008CBA; /* Color diferente al seleccionar */
+}
+.sold {
+    background-color: red; /* Color rojo para números vendidos */
+    cursor: not-allowed; /* Cursor de no permitido para números vendidos */
+}
+.info {
+    margin-bottom: 20px;
+    color: #333;
+}
